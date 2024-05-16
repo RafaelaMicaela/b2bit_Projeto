@@ -1,12 +1,9 @@
-import ModalLogin from "../../components/ModalLogin"
+import { ModalLogin } from "../../components/ModalLogin";
 
-export const Login: React.FC = () => {
-      return (
-        <div >
-          <ModalLogin/>
-        </div>
-      );
-    };
-    
-
-
+export const Login = () => {
+  return (
+    <div>
+      <ModalLogin />
+    </div>
+  );
+};

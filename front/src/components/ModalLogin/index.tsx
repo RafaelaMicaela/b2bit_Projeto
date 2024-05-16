@@ -1,5 +1,4 @@
-
-const ModalLogin = () => {
+export function ModalLogin() {
   return (
     <div className="w-[438px] h-[534px] p-[55px_26.25px_40.13px_25.88px] rounded-tl-[18px] opacity-0 bg-gray-100">
       <form className="flex flex-col gap-0">
@@ -28,6 +27,4 @@ const ModalLogin = () => {
       </form>
     </div>
   );
-};
-
-export default ModalLogin;
+}
