@@ -7,6 +7,9 @@ export const theme = {
     fontFamily: {
       nunito: ['Nunito', 'sans-serif'],
     },
+    boxShadow: {
+      'shadow-login': '0px 0px 64px rgba(0, 0, 0, 0.25)', // Exemplo de sombra personalizada
+    },
     colors: {
       customBlue: '#02274F',
       customWhite: '#FAFAFA',
