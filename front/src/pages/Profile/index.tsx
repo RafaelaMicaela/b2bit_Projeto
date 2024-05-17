@@ -1,41 +1,48 @@
 import Img from "../../assets/perfil.png";
+import { Button } from "../../components/Button";
 
 const Profile = () => {
   return (
     <div className="bg-customBg flex justify-center items-center h-screen ">
-      <nav className="fixed top-0 w-full h-[70px] bg-white shadow-lg flex items-center justify-between px-4 z-50"/>
+      <nav className="fixed top-0 w-full h-[70px] bg-white shadow-sm flex items-center px-4 z-50">
+        <div className="flex justify-center items-center px-4 py-2 ml-auto mb-6">
+          <Button>Logout</Button>
+        </div>
+      </nav>
       <div className=" bg-white flex-col flex justify-center items-center w-[356px] h-[315px] gap-0 rounded-lg shadow-lg">
-        <div className="flex flex-col justify-center items-center">
-          <h5 className=" font-muito text-[12px] font-normal whitespace-nowrap mb-2 ">
+        <div className="flex flex-col justify-center items-center mb-6">
+          <h5 className="font-nunito font-normal text-[12px]  whitespace-nowrap mb-2">
             Profile picture
           </h5>
-          <img
-            src={Img}
-            alt="Descrição da Imagem"
-            className="w-[75px] h-[75px] "
-          />
+          <div>
+            <img
+              src={Img}
+              alt="Imagem do Perfil"
+              className="w-[100px] h-[56px] rounded-full object-cover"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-2">
           <label
-            className=" w-[73px] h-[12px] gap-0 font-nunito text-[14px] font-normal text-left"
+            className=" w-[73px] h-[12px] gap-0  font-munito text-[14px] font-normal text-left"
             htmlFor="name"
           >
             Your <span className="font-bold">Name</span>
           </label>
           <input
-            className=" w-[296px] h-[44px]  gap-0 rounded[-8px] mt-1 p-2  border-gray-300 rounded bg-gray-200"
+            className=" w-[296px] h-[44px] gap-0 rounded[-8px] mt-1 p-2  border-gray-300 rounded bg-customWhite2 disabled-input custom-placeholder"
             type="text"
             placeholder="Christine James"
           />
 
           <label
-            className=" w-[73px] h-[12px] gap-0 font-nunito text-[14px] font-normal text-left whitespace-nowrap "
+            className=" w-[73px] h-[12px] gap-0 font-munito text-[14px] font-normal text-left whitespace-nowrap "
             htmlFor="email"
           >
             Your <span className="font-bold">E-mail</span>
           </label>
           <input
-            className=" w-[296px] h-[44px] gap-0 rounded[-8px] mt-1 p-2  border-gray-300 rounded bg-gray-200"
+            className=" w-[296px] h-[44px] gap-0 rounded[-8px] mt-1 p-2  border-gray-300 rounded bg-customWhite2 disabled-input custom-placeholder"
             type="text"
             placeholder="christinejames@gmail.com"
           />

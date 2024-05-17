@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .placeholder-#262626::placeholder {
-      color: #262626;
-    }
-  }
+.disabled-input {
+  pointer-events: none;
+}
+.custom-placeholder::placeholder {
+  color: #262626; 
+  font-size: 12px;
+}

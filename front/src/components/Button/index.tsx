@@ -5,7 +5,7 @@ export type ButtonProps = ComponentProps<"button">;
 export function Button(props: ButtonProps) {
   return (
     <button
-      className="w-[50.38px] h-[34px]  rounded-tl-[9px] bg-[#02274F] text-[#FAFAFA]  font-bold text-[10px]  text-center"
+      className="w-[272px] h-[44px] mt-4 rounded-[9px]  bg-[#02274F] text-[#FAFAFA] font-nunito font-bold text-[18px]  text-center"
       {...props}
     />
   );

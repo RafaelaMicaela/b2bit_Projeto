@@ -17,13 +17,13 @@ const Login = () => {
             <input
               type="email"
               placeholder="@gmail.com"
-              className="w-[385.88px] h-[54.25px] mt-1 p-2 border border-gray-300 rounded bg-gray-100"
+              className="w-[385.88px] h-[54.25px] mt-1 p-2  border-gray-300 rounded bg-gray-100"
             />
             <label className="mt-3 font-bold">Password</label>
             <input
               type="password"
               placeholder="****************"
-              className="w-[385.88px]  h-[54.25px] mt-1 p-2 border border-gray-300 rounded bg-gray-100"
+              className="w-[385.88px]  h-[54.25px] mt-1 p-2  border-gray-300 rounded bg-gray-100"
             />
             <button
               type="submit"

@@ -13,8 +13,9 @@ export const theme = {
     },
     colors: {
       customBlue: '#02274F',
-      customWhite: '#FAFAFA #FDFDFD',
+      customWhite: '#FDFDFD',
       customBg: '#F1F5F9',
+      customWhite2: '#F4F4F4',
     },
   },
 };
