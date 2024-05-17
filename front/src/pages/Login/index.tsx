@@ -9,7 +9,9 @@ const Login = () => {
     <div className="flex justify-center items-center h-screen">
       <div className="flex justify-center items-center  w-[438px] h-[534px]  rounded-[18px] shadow-shadow-login">
         <div>
-          <img src={LogoImg} alt="Logo b2Bit" />
+          <div className="flex justify-center items-center w-full">
+            <img src={LogoImg} alt="Logo b2Bit" />
+          </div>
           <form className="flex flex-col gap-0 ">
             <label className="mt-8 font-bold"> E-mail</label>
             <input
