@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .placeholder-#262626::placeholder {
+      color: #262626;
+    }
+  }
