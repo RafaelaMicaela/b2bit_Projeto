@@ -3,7 +3,8 @@ import Img from "../../assets/perfil.png";
 const Profile = () => {
   return (
     <div className="bg-customBg flex justify-center items-center h-screen ">
-      <div className=" bg-customWhite flex-col flex justify-center items-center w-[356px] h-[315px] gap-0 rounded-lg shadow-lg">
+      <nav className="fixed top-0 w-full h-[70px] bg-white shadow-lg flex items-center justify-between px-4 z-50"/>
+      <div className=" bg-white flex-col flex justify-center items-center w-[356px] h-[315px] gap-0 rounded-lg shadow-lg">
         <div className="flex flex-col justify-center items-center">
           <h5 className=" font-muito text-[12px] font-normal whitespace-nowrap mb-2 ">
             Profile picture
