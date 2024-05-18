@@ -1,12 +1,17 @@
+import { Navigate } from "react-router-dom";
 import Img from "../../assets/perfil.png";
 import { Button } from "../../components/Button";
+import { useState } from "react";
 
 const Profile = () => {
+  const [isLogged, setIsLogged] = useState(true);
+
+  
   return (
     <div className="bg-customBg flex justify-center items-center h-screen ">
       <nav className="fixed top-0 w-full h-[70px] bg-white shadow-sm flex items-center px-4 z-50">
         <div className="flex justify-center items-center px-4 py-2 ml-auto mb-6">
-          <Button>Logout</Button>
+          <Button onClick={() => setIsLogged(false)}>Logout</Button>
         </div>
       </nav>
       <div className=" bg-white flex-col flex justify-center items-center w-[356px] h-[315px] gap-0 rounded-lg shadow-lg">
@@ -48,6 +53,7 @@ const Profile = () => {
           />
         </div>
       </div>
+      {!isLogged && <Navigate to={"/"} />}
     </div>
   );
 };
