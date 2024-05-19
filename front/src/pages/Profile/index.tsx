@@ -2,32 +2,39 @@ import { Navigate } from "react-router-dom";
 import Img from "../../assets/perfil.png";
 import { Button } from "../../components/Button";
 import { useState } from "react";
+import { removeToken } from "../../api/auth";
 
 const Profile = () => {
   const [isLogged, setIsLogged] = useState(true);
 
-  
   return (
     <div className="bg-customBg flex justify-center items-center h-screen ">
       <nav className="fixed top-0 w-full h-[70px] bg-white shadow-sm flex items-center px-4 z-50">
-        <div className="flex justify-center items-center px-4 py-2 ml-auto mb-6">
-          <Button onClick={() => setIsLogged(false)}>Logout</Button>
+        <div className="flex justify-center items-center px-4 py-2 ml-auto mb-5">
+          <Button
+            onClick={() => {
+              removeToken();
+              setIsLogged(false);
+            }}
+          >
+            Logout
+          </Button>
         </div>
       </nav>
       <div className=" bg-white flex-col flex justify-center items-center w-[356px] h-[315px] gap-0 rounded-lg shadow-lg">
-        <div className="flex flex-col justify-center items-center mb-6">
-          <h5 className="font-nunito font-normal text-[12px]  whitespace-nowrap mb-2">
+        <div className="flex flex-col justify-center items-center">
+          <h5 className=" font-normal text-[12px]  whitespace-nowrap mb-2">
             Profile picture
           </h5>
           <div>
             <img
               src={Img}
               alt="Imagem do Perfil"
-              className="w-[100px] h-[56px] rounded-full object-cover"
+              className="w-[56px] h-[56px] rounded-[8px]"
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 gap-2 mt-5">
           <label
             className=" w-[73px] h-[12px] gap-0  font-munito text-[14px] font-normal text-left"
             htmlFor="name"
