@@ -20,7 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/global.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/global.d.ts", "src/setupTests.ts"],
   "exclude": ["node_modules", "dist"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+
 }
